@@ -8,25 +8,19 @@ Make sure you are using the latest versions of node and npm. If you do not have 
 
 ### Building Dependencies
 
-Navigate to the `core`, `packages/react` and `packages/react-router` directories and build each of them:
+Ensure that the `core`, `packages/react` and `packages/react-router` directories are built by running the following from the root of the repo:
 
 ```bash
 npm i
-npm run build
+npm run build -w core
+npm run build -w packages/react
+npm run build -w packages/react-router
 ```
 
 Then, install dependencies from this directory for this test app:
 
 ```
 npm i
-```
-
-### Syncing Changes
-
-When making changes to the React package, run the following from this directory to sync the changes:
-
-```bash
-npm run sync
 ```
 
 ### Previewing App

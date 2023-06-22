@@ -15,15 +15,12 @@ runs:
       with:
         name: ionic-vue
         path: ./packages/vue
-        filename: VueBuild.zip
-    - name: Install Vue Router Dependencies
+        filename: VueBuild.zip'
+
+    - name: Install Dependencies at the root of the repo
       run: npm ci
       shell: bash
-      working-directory: ./packages/vue-router
-    - name: Sync
-      run: npm run sync
-      shell: bash
-      working-directory: ./packages/vue-router
+
     - name: Lint
       run: npm run lint
       shell: bash

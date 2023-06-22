@@ -4,29 +4,33 @@ Ionic Framework integration for Vue 3 apps.
 
 ## Building
 
-1. Install dependencies in `@ionic/core`:
+1. Install dependencies from the root of the repo:
 
 ```shell
-cd core && npm install
+npm install
 ```
 
-2. Build `@ionic/core`. This will generate Vue component bindings in the `packages/vue` directory:
+2. Build `@ionic/core`:
+
+- Either by running it from the root with `npm run build -w core`
+- Or by changing directory into core and then running its build:
 
 ```shell
+cd core
 npm run build
-````
-
-3. Install dependencies in `@ionic/vue`:
-
-```shell
-cd packages/vue && npm install
 ```
 
-2. Build `@ionic/vue`:
+This will generate Vue component bindings in the `packages/vue` directory.
+
+3. Build `@ionic/vue`:
+
+- Either by running it from the root with `npm run build -w packages/vue`
+- Or by changing directory into `packages/vue` and then running its build:
 
 ```shell
+cd packages/vue
 npm run build
-````
+```
 
 ## Tests
 

@@ -19,10 +19,15 @@ runs:
         name: ionic-core
         path: ./core
         filename: CoreBuild.zip
-    - name: Install Playwright Dependencies
-      run: npm install && npx playwright install && npx playwright install-deps
+
+    - name: Install Dependencies at the root of the repo
+      run: npm ci
       shell: bash
-      working-directory: ./core
+      
+    - name: Install Playwright Dependencies
+      run: npx playwright install && npx playwright install-deps
+      shell: bash
+
     - name: Test
       if: inputs.update != 'true'
       run: npm run test.e2e -- --shard=${{ inputs.shard }}/${{ inputs.totalShards }}

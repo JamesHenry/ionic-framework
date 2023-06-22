@@ -7,10 +7,11 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16.x
-    - name: Install Dependencies
-      run: npm install
-      working-directory: ./core
+    
+    - name: Install Dependencies at the root of the repo
+      run: npm ci
       shell: bash
+
     - name: Build Core
       run: npm run build -- --ci
       working-directory: ./core

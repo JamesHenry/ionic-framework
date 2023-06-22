@@ -1,9 +1,4 @@
 {
-  "packages": [
-    "core",
-    "docs",
-    "angular",
-    "packages/*"
-  ],
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "version": "7.0.14"
 }

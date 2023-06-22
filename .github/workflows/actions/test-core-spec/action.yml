@@ -6,15 +6,16 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16.x
-    - name: Install Dependencies
-      run: npm install
-      working-directory: ./core
-      shell: bash
     - uses: ./.github/workflows/actions/download-archive
       with:
         name: ionic-core
         path: ./core
         filename: CoreBuild.zip
+
+    - name: Install Dependencies at the root of the repo
+      run: npm ci
+      shell: bash
+
     - name: Test
       run: npm run test.spec -- --ci
       shell: bash

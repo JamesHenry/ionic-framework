@@ -16,14 +16,11 @@ runs:
         name: ionic-react
         path: ./packages/react
         filename: ReactBuild.zip
-    - name: Install Dependencies
+
+    - name: Install Dependencies at the root of the repo
       run: npm ci
       shell: bash
-      working-directory: ./packages/react-router
-    - name: Sync
-      run: npm run sync
-      shell: bash
-      working-directory: ./packages/react-router
+
     - name: Lint
       run: npm run lint
       shell: bash

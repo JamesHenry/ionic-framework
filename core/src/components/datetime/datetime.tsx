@@ -715,7 +715,7 @@ export class Datetime implements ComponentInterface {
      */
     calendarBodyRef.addEventListener('keydown', (ev: KeyboardEvent) => {
       const activeElement = root.activeElement;
-      if (!activeElement || !activeElement.classList.contains('calendar-day')) {
+      if (!activeElement?.classList.contains('calendar-day')) {
         return;
       }
 

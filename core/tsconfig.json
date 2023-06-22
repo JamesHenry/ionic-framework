@@ -27,6 +27,7 @@
     "removeComments": false,
     "target": "es2017",
     "baseUrl": ".",
+    "types": ["node", "jest"],
     "paths": {
       "@utils/*": ["src/utils/*"],
       "@utils/test": ["src/utils/test/utils"]

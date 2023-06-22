@@ -13,10 +13,10 @@ runs:
       with:
         node-version: 16.x
 
-    - name: Install Dependencies
+    - name: Install Dependencies at the root of the repo
       run: npm ci
-      working-directory: ./core
       shell: bash
+
     - name: Install Stencil ${{ inputs.stencil-version }}
       working-directory: ./core
       run: npm i @stencil/core@${{ inputs.stencil-version }}

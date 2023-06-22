@@ -18,7 +18,8 @@
     "removeComments": false,
     "sourceMap": true,
     "jsx": "react",
-    "target": "es2017"
+    "target": "es2017",
+    "types": ["vue"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["./__tests__/**", "node_modules", "setupTests.ts"],

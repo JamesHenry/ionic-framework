@@ -7,10 +7,7 @@
     "declaration": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "es2015",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -23,24 +20,12 @@
     "target": "es2017",
     "baseUrl": ".",
     "paths": {
-      "@ionic/core/hydrate": [
-        "./core/hydrate"
-      ],
-      "@ionic/core": [
-        "./core"
-      ],
-      "@ionic/angular": [
-        "./angular"
-      ],
-      "@ionic/angular-server": [
-        "./packages/angular-server"
-      ],
-      "@ionic/react": [
-        "./react"
-      ],
-      "@ionic/vue": [
-        "./vue"
-      ]
+      "@ionic/angular": ["./angular"],
+      "@ionic/angular-server": ["./packages/angular-server"],
+      "@ionic/core": ["./core"],
+      "@ionic/core/hydrate": ["./core/hydrate"],
+      "@ionic/react": ["./react"],
+      "@ionic/vue": ["./vue"]
     }
   }
 }

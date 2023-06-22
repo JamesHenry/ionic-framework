@@ -4,23 +4,27 @@ Routing integration for `@ionic/vue` applications.
 
 ## Building
 
-1. Install dependencies:
+1. Install dependencies from the root of the repo:
 
 ```shell
 npm install
 ```
 
-2. Run build script:
+3. Build `@ionic/vue-router`:
+
+- Either by running it from the root with `npm run build -w packages/vue-router`
+- Or by changing directory into `packages/vue-router` and then running its build:
 
 ```shell
+cd packages/vue-router
 npm run build
-````
+```
 
 ## Tests
 
-* Tests are found in the `__tests__` directory and use Jest.
-* Tests can be run using `npm run test.spec`
-* Bug fix and feature PRs should have new tests verifying the PR functionality.
+- Tests are found in the `__tests__` directory and use Jest.
+- Tests can be run using `npm run test.spec` (additionally include `-w packages/vue-router` if running the command from the root of the repo)
+- Bug fix and feature PRs should have new tests verifying the PR functionality.
 
 ## Contributing
 

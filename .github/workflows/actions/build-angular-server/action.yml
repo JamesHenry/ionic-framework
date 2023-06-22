@@ -7,10 +7,10 @@ runs:
       with:
         node-version: 16.x
 
-    - name: Install Angular Server Dependencies
+    - name: Install Dependencies at the root of the repo
       run: npm ci
       shell: bash
-      working-directory: ./packages/angular-server
+
     - name: Build
       run: npm run build.prod
       shell: bash

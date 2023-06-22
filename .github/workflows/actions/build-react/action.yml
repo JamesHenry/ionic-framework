@@ -11,14 +11,11 @@ runs:
         name: ionic-core
         path: ./core
         filename: CoreBuild.zip
-    - name: Install React Dependencies
+
+    - name: Install Dependencies at the root of the repo
       run: npm ci
       shell: bash
-      working-directory: ./packages/react
-    - name: Sync
-      run: npm run sync
-      shell: bash
-      working-directory: ./packages/react
+
     - name: Lint
       run: npm run lint
       shell: bash

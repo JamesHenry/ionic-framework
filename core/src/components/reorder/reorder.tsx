@@ -26,7 +26,7 @@ export class Reorder implements ComponentInterface {
 
     // Only stop event propagation if the reorder is inside of an enabled
     // reorder group. This allows interaction with clickable children components.
-    if (!reorderGroup || !reorderGroup.disabled) {
+    if (!reorderGroup?.disabled) {
       ev.stopImmediatePropagation();
     }
   }

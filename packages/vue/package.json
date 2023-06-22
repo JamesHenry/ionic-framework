@@ -62,11 +62,11 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.32.1",
     "typescript": "^4.7.3",
-    "vue": "^3.2.37",
-    "vue-router": "^4.0.16"
+    "vue": "3.2.37",
+    "vue-router": "4.0.16"
   },
   "dependencies": {
-    "@ionic/core": "^7.0.14",
+    "@ionic/core": "file:../../core",
     "ionicons": "^7.0.0"
   },
   "vetur": {

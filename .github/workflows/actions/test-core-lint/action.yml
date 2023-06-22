@@ -6,10 +6,11 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16.x
-    - name: Install Dependencies
+
+    - name: Install Dependencies at the root of the repo
       run: npm ci
-      working-directory: ./core
       shell: bash
+
     - name: Lint
       run: npm run lint
       shell: bash
